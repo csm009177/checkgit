@@ -9,30 +9,21 @@
 
 <body>
     <div id="root">
-        <ul>
-            <li data-csm="성민">피카츄</li>
-            <li data-csm="양념">라이츄</li>
-            <li data-csm="성민">파이리</li>
-        </ul>
-
-        <script>
-
-            const root = document.getElementById('root');
-            const ul = root.children[0];
-            console.log(ul);
-
-            ul.addEventListener("click", (event) => {
-
-                let datasetTarget = event.target.dataset.csm;
-                if (datasetTarget === '양념') {
-                    event.target.style.color = "green";
-                }else {
-                    event.target.style.display = 'none';
-                }
-            });
-
-        </script>
+        <header></header>
+        <main></main>
+        <footer></footer>
     </div>
+    <script src="./src/first.js"></script>
+    <script>
+        const header = document.querySelector('header');
+        const main = document.querySelector('main');
+        const footer = document.querySelector('footer');
+        console.log('Header:', header);
+        console.log('Main:', main);
+        console.log('Footer:', footer);
+
+        console.dir(someObject);
+    </script>
 </body>
 
 </html>
